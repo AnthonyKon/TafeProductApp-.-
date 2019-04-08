@@ -37,10 +37,13 @@ namespace ProductApps
 
                 int totalCharge;
                 int totalChargeWithWrap;
+                int gst;
                 totalCharge = 25 + Convert.ToInt16(totalPaymentTextBlock.Text);
                 totalChargeTextBlock.Text = Convert.ToString(totalCharge);
                 totalChargeWithWrap = totalCharge + 5;
                 totalChargeWrapTextBlock.Text = Convert.ToString(totalChargeWithWrap);
+                gst = Convert.ToInt16((totalChargeWithWrap) * 1.1);
+                gstTextBlock.Text = Convert.ToString(gst);
 
                 
             }
