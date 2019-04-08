@@ -36,8 +36,11 @@ namespace ProductApps
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
 
                 int totalCharge;
+                int totalChargeWithWrap;
                 totalCharge = 25 + Convert.ToInt16(totalPaymentTextBlock.Text);
                 totalChargeTextBlock.Text = Convert.ToString(totalCharge);
+                totalChargeWithWrap = totalCharge + 5;
+                totalChargeWrapTextBlock.Text = Convert.ToString(totalChargeWithWrap);
 
                 
             }
